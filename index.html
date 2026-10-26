@@ -5,7 +5,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>EARTH University Canada Foundation</title>
-  <meta name="description" content="EARTH University Canada Foundation">
+  <meta name="description" content="EARTH University Canada Foundation — Advancing education, sustainable agriculture, and leadership development.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="./Images/cropped-EARTH-favicon.webp">
+
+  <!-- Social Media & Link Previews (Facebook, WhatsApp, Telegram) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="EARTH University Canada Foundation">
+  <meta property="og:title" content="EARTH University Canada Foundation — Supporting Education & Sustainable Futures">
+  <meta property="og:description" content="Dedicated to advancing education, leadership development, poverty relief, and environmental conservation through scholarships and training initiatives.">
+  <meta property="og:image" content="./Images/snai.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1500">
+  <meta property="og:image:height" content="580">
+  <meta property="og:image:alt" content="EARTH University Canada Foundation campus and community">
+  <meta property="og:url" content="https://earth-can.org/">
+  <meta property="og:locale" content="en_CA">
+
+  <!-- Twitter / Telegram Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="EARTH University Canada Foundation — Supporting Education & Sustainable Futures">
+  <meta name="twitter:description" content="Dedicated to advancing education, leadership development, poverty relief, and environmental conservation through scholarships and training initiatives.">
+  <meta name="twitter:image" content="./Images/snai.jpg">
+  <meta name="twitter:image:alt" content="EARTH University Canada Foundation campus and community">
 
   <!-- Google Fonts: Montserrat -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -258,30 +281,8 @@
     }
 
     /* =========================================
-       SWITCHABLE PURPOSES VARIANTS
+       CHARITABLE PURPOSES
        ========================================= */
-    .purposes-variant {
-      display: none;
-      animation: fadeInVariant 0.3s ease;
-    }
-
-    .purposes-variant.active {
-      display: block;
-    }
-
-    @keyframes fadeInVariant {
-      from {
-        opacity: 0;
-        transform: translateY(6px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* V1: PURPOSES FORMATO ORIGINAL (Párrafos numerados) */
     .v1-purposes-container {
       max-width: 1180px;
       margin: 30px auto 65px;
@@ -312,155 +313,6 @@
       color: var(--brand);
       font-size: 1.1rem;
       margin-right: 6px;
-    }
-
-    /* V2: PURPOSES GRID (Diseño actual en cuadrícula) */
-    .purposes-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 24px;
-      margin-top: 30px;
-      margin-bottom: 70px;
-    }
-
-    .purpose-card {
-      background: #ffffff;
-      border: 1px solid var(--stroke);
-      border-radius: var(--radius-md);
-      padding: 32px 28px;
-      display: flex;
-      flex-direction: column;
-      box-shadow: var(--shadow-sm);
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    .purpose-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-lg);
-      border-color: #cbd5e1;
-    }
-
-    .purpose-icon {
-      width: 50px;
-      height: 50px;
-      border-radius: 12px;
-      background: var(--brand-light);
-      color: var(--brand);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 20px;
-      transition: background 0.3s ease, color 0.3s ease;
-      flex-shrink: 0;
-    }
-
-    .purpose-card:hover .purpose-icon {
-      background: var(--brand);
-      color: #ffffff;
-    }
-
-    .purpose-card .card-number {
-      font-size: 0.75rem;
-      font-weight: 800;
-      color: var(--brand);
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-
-    .purpose-card h3 {
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: var(--text);
-      margin: 0 0 12px 0;
-      line-height: 1.35;
-    }
-
-    .purpose-card p {
-      color: var(--muted);
-      font-size: 0.95rem;
-      line-height: 1.65;
-      text-align: left !important;
-      margin: 0;
-    }
-
-    /* V3: PURPOSES DISEÑO VERTICAL */
-    .purposes-vertical {
-      display: flex;
-      flex-direction: column;
-      gap: 22px;
-      max-width: 1180px;
-      margin: 35px auto 75px;
-    }
-
-    .purpose-vertical-card {
-      background: #ffffff;
-      border: 1px solid var(--stroke);
-      border-left: 6px solid var(--brand);
-      border-radius: var(--radius-md);
-      padding: 30px 34px;
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 28px;
-      align-items: flex-start;
-      box-shadow: var(--shadow-sm);
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      position: relative;
-    }
-
-    .purpose-vertical-card:hover {
-      transform: translateX(8px);
-      box-shadow: var(--shadow-lg);
-      border-color: #cbd5e1;
-      border-left-color: var(--brand-hover);
-    }
-
-    .purpose-vertical-card .purpose-icon {
-      margin-bottom: 0;
-      width: 48px;
-      height: 48px;
-    }
-
-    .purpose-vertical-card:hover .purpose-icon {
-      background: var(--brand);
-      color: #ffffff;
-    }
-
-    .purpose-vertical-card:hover .purpose-vertical-num {
-      color: #ffffff;
-    }
-
-    .purpose-vertical-side {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .purpose-vertical-num {
-      font-size: 1.05rem;
-      font-weight: 800;
-      letter-spacing: 1px;
-      color: var(--brand);
-      text-transform: uppercase;
-      transition: color 0.3s ease;
-    }
-
-    .purpose-vertical-content h3 {
-      font-size: 1.3rem;
-      font-weight: 800;
-      color: var(--text);
-      margin: 0 0 10px 0;
-      line-height: 1.35;
-      text-align: left;
-    }
-
-    .purpose-vertical-content p {
-      color: var(--muted);
-      font-size: 1rem;
-      line-height: 1.7;
-      margin: 0;
-      text-align: left !important;
     }
 
     /* =========================================
@@ -665,95 +517,9 @@
     /* Footer */
     footer {
       border-top: 1px solid var(--stroke);
-      padding: 2.5rem 0 5rem 0;
+      padding: 2.5rem 0;
       color: #6b7280;
       background: var(--bg-soft);
-    }
-
-    /* =========================================
-       FLOATING VERSION PICKER (TEMPORAL)
-       ========================================= */
-    #version-picker-bar {
-      position: fixed;
-      bottom: 22px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 9999;
-      font-family: "montserrat", sans-serif;
-    }
-
-    .picker-container {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      background: rgba(17, 24, 39, 0.92);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      border-radius: 999px;
-      padding: 6px 10px;
-      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35), 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .picker-tag {
-      color: #94a3b8;
-      font-size: 0.72rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-      padding: 0 8px 0 6px;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    .picker-tag svg {
-      width: 14px;
-      height: 14px;
-      color: var(--brand);
-    }
-
-    .picker-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      padding: 8px 16px;
-      border-radius: 999px;
-      border: 1px solid transparent;
-      background: transparent;
-      color: #cbd5e1;
-      font-size: 0.83rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: all 0.22s ease;
-      font-family: inherit;
-    }
-
-    .picker-btn .badge-v {
-      display: inline-grid;
-      place-items: center;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.12);
-      font-size: 0.72rem;
-      font-weight: 800;
-      color: #ffffff;
-    }
-
-    .picker-btn:hover {
-      background: rgba(255, 255, 255, 0.1);
-      color: #ffffff;
-    }
-
-    .picker-btn.active {
-      background: var(--brand);
-      color: #ffffff;
-      box-shadow: 0 4px 14px rgba(0, 140, 153, 0.45);
-    }
-
-    .picker-btn.active .badge-v {
-      background: rgba(255, 255, 255, 0.28);
     }
 
     /* Responsive media queries */
@@ -806,22 +572,6 @@
     }
 
     @media (max-width: 768px) {
-      .purposes-grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
-      }
-
-      .purpose-vertical-card {
-        grid-template-columns: 1fr;
-        gap: 16px;
-        padding: 24px;
-      }
-
-      .purpose-vertical-side {
-        flex-direction: row;
-        gap: 12px;
-      }
-
       .v1-purposes-container {
         padding: 26px 20px;
       }
@@ -866,31 +616,6 @@
 
       .btn-news {
         width: 100%;
-      }
-
-      #version-picker-bar {
-        bottom: 12px;
-        width: 95%;
-      }
-
-      .picker-container {
-        justify-content: space-between;
-        padding: 5px 6px;
-        gap: 4px;
-      }
-
-      .picker-tag {
-        display: none;
-      }
-
-      .picker-btn {
-        padding: 7px 10px;
-        font-size: 0.75rem;
-        gap: 4px;
-      }
-
-      .picker-btn .btn-text {
-        font-size: 0.72rem;
       }
     }
 
@@ -947,227 +672,33 @@
       </div>
 
 
-      <!-- ========================================================
-           VERSION 1: PURPOSES - FORMATO ORIGINAL (LISTA NUMERADA)
-           ======================================================== -->
-      <div id="purposes-v1" class="purposes-variant">
-        <div class="v1-purposes-container">
-          <p class="v1-purpose-p">
-            <strong>1)</strong> Advance education by providing publicly available scholarships, bursaries, and other
-            forms of financial assistance to students to attend post-secondary education institutions.
-          </p>
-          <p class="v1-purpose-p">
-            <strong>2)</strong> Support economic growth and leadership development by operating a program, inclusive
-            of business training and support designed to enable youth to transition successfully into employment and
-            entrepreneurial roles in their communities.
-          </p>
-          <p class="v1-purpose-p">
-            <strong>3)</strong> Protect the environment for the benefit of the public by conserving, or restoring
-            ecosystems, and promoting behaviour changes to strengthen climate change mitigation, adaptation, and
-            resilience.
-          </p>
-          <p class="v1-purpose-p">
-            <strong>4)</strong> Advance education by providing workshops, training programs, seminars, conferences,
-            educational aids and related support on topics related to business development, economic development,
-            skills development, entrepreneurship, agricultural production, marketing, financial literacy, career
-            skills and gender equality.
-          </p>
-          <p class="v1-purpose-p">
-            <strong>5)</strong> Advance education by providing a professional development and/or leadership program
-            that involves training, workshops and fellowships for post-secondary students and recent graduates which
-            furthers their understanding of entrepreneurship and supports them in transitioning to employment.
-          </p>
-        </div>
-      </div>
-
-      <!-- ========================================================
-           VERSION 2: PURPOSES - CONFIGURACIÓN ACTUAL (GRID)
-           ======================================================== -->
-      <div id="purposes-v2" class="purposes-variant active">
-        <div class="purposes-grid">
-          <!-- Purpose 1 -->
-          <div class="purpose-card">
-            <div class="purpose-icon">
-              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" viewBox="0 0 24 24">
-                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-                <path d="M6 12v5c3 3 9 3 12 0v-5" />
-              </svg>
-            </div>
-            <span class="card-number">Purpose 01</span>
-            <h3>Scholarships & Financial Assistance</h3>
-            <p>
-              Advance education by providing publicly available scholarships, bursaries, and other forms of financial
-              assistance to students to attend post-secondary education institutions.
-            </p>
-          </div>
-
-          <!-- Purpose 2 -->
-          <div class="purpose-card">
-            <div class="purpose-icon">
-              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" viewBox="0 0 24 24">
-                <path d="M7 20h10" />
-                <path d="M10 20c0-4.4 3.6-8 8-8V8c-4.4 0-8 3.6-8 8" />
-                <path d="M4 14c0-3.3 2.7-6 6-6v-2C5.6 6 2 9.6 2 14z" />
-              </svg>
-            </div>
-            <span class="card-number">Purpose 02</span>
-            <h3>On-the-Job Training & Workshops</h3>
-            <p>
-              Advance education by providing on-the-job training complemented by ongoing educational workshops and
-              training sessions to post-secondary students and recent graduates whose studies are focused on
-              agriculture, the environment, and/or agribusiness.
-            </p>
-          </div>
-
-          <!-- Purpose 3 -->
-          <div class="purpose-card">
-            <div class="purpose-icon">
-              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="10" />
-                <line x1="2" y1="12" x2="22" y2="12" />
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-              </svg>
-            </div>
-            <span class="card-number">Purpose 03</span>
-            <h3>Poverty Relief & Sustainable Agriculture</h3>
-            <p>
-              Relieve poverty in developing countries by providing training programs and related support on
-              sustainable agriculture, business development, marketing, and financial literacy to individuals in need.
-            </p>
-          </div>
-
-          <!-- Purpose 4 -->
-          <div class="purpose-card">
-            <div class="purpose-icon">
-              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" viewBox="0 0 24 24">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                <path d="m9 12 2 2 4-4" />
-              </svg>
-            </div>
-            <span class="card-number">Purpose 04</span>
-            <h3>Fund Management & Qualified Donees</h3>
-            <p>
-              Receive and maintain a fund or funds and to apply all or part of the principal and income therefrom,
-              from time to time, to qualified donees as defined in subsection 149.1(1) of the Income Tax Act (Canada).
-            </p>
-          </div>
-
-          <!-- Purpose 5 -->
-          <div class="purpose-card">
-            <div class="purpose-icon">
-              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" viewBox="0 0 24 24">
-                <polygon
-                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-              </svg>
-            </div>
-            <span class="card-number">Purpose 05</span>
-            <h3>Incidental & Ancillary Activities</h3>
-            <p>
-              Undertake activities ancillary and incidental to the attainment of the above mentioned charitable
-              purposes.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- ========================================================
-           VERSION 3: PURPOSES - DISEÑO VERTICAL
-           ======================================================== -->
-      <div id="purposes-v3" class="purposes-variant">
-        <div class="purposes-vertical">
-          <!-- Purpose 1 -->
-          <div class="purpose-vertical-card">
-            <div class="purpose-vertical-side">
-              <div class="purpose-icon">
-                <span class="purpose-vertical-num">01</span>
-              </div>
-
-            </div>
-            <div class="purpose-vertical-content">
-
-              <p>
-                Advance education by providing publicly available scholarships, bursaries, and other forms of
-                financial assistance to students to attend post-secondary education institutions.
-              </p>
-            </div>
-          </div>
-
-          <!-- Purpose 2 -->
-          <div class="purpose-vertical-card">
-            <div class="purpose-vertical-side">
-              <div class="purpose-icon">
-                <span class="purpose-vertical-num">02</span>
-              </div>
-
-            </div>
-            <div class="purpose-vertical-content">
-
-              <p>
-                Advance education by providing on-the-job training complemented by ongoing educational workshops and
-                training sessions to post-secondary students and recent graduates whose studies are focused on
-                agriculture, the environment, and/or agribusiness.
-              </p>
-            </div>
-          </div>
-
-          <!-- Purpose 3 -->
-          <div class="purpose-vertical-card">
-            <div class="purpose-vertical-side">
-              <div class="purpose-icon">
-                <span class="purpose-vertical-num">03</span>
-              </div>
-
-            </div>
-            <div class="purpose-vertical-content">
-
-              <p>
-                Relieve poverty in developing countries by providing training programs and related support on
-                sustainable agriculture, business development, marketing, and financial literacy to individuals in
-                need.
-              </p>
-            </div>
-          </div>
-
-          <!-- Purpose 4 -->
-          <div class="purpose-vertical-card">
-            <div class="purpose-vertical-side">
-              <div class="purpose-icon">
-                <span class="purpose-vertical-num">04</span>
-              </div>
-
-            </div>
-            <div class="purpose-vertical-content">
-
-              <p>
-                Receive and maintain a fund or funds and to apply all or part of the principal and income therefrom,
-                from time to time, to qualified donees as defined in subsection 149.1(1) of the Income Tax Act
-                (Canada).
-              </p>
-            </div>
-          </div>
-
-          <!-- Purpose 5 -->
-          <div class="purpose-vertical-card">
-            <div class="purpose-vertical-side">
-              <div class="purpose-icon">
-                <span class="purpose-vertical-num">05</span>
-              </div>
-
-            </div>
-            <div class="purpose-vertical-content">
-
-              <p>
-                Undertake activities ancillary and incidental to the attainment of the above mentioned charitable
-                purposes.
-              </p>
-            </div>
-          </div>
-        </div>
+      <!-- Charitable Purposes (Numbered List) -->
+      <div class="v1-purposes-container">
+        <p class="v1-purpose-p">
+          <strong>1)</strong> Advance education by providing publicly available scholarships, bursaries, and other
+          forms of financial assistance to students to attend post-secondary education institutions.
+        </p>
+        <p class="v1-purpose-p">
+          <strong>2)</strong> Support economic growth and leadership development by operating a program, inclusive
+          of business training and support designed to enable youth to transition successfully into employment and
+          entrepreneurial roles in their communities.
+        </p>
+        <p class="v1-purpose-p">
+          <strong>3)</strong> Protect the environment for the benefit of the public by conserving, or restoring
+          ecosystems, and promoting behaviour changes to strengthen climate change mitigation, adaptation, and
+          resilience.
+        </p>
+        <p class="v1-purpose-p">
+          <strong>4)</strong> Advance education by providing workshops, training programs, seminars, conferences,
+          educational aids and related support on topics related to business development, economic development,
+          skills development, entrepreneurship, agricultural production, marketing, financial literacy, career
+          skills and gender equality.
+        </p>
+        <p class="v1-purpose-p">
+          <strong>5)</strong> Advance education by providing a professional development and/or leadership program
+          that involves training, workshops and fellowships for post-secondary students and recent graduates which
+          furthers their understanding of entrepreneurship and supports them in transitioning to employment.
+        </p>
       </div>
 
       <!-- ========================================================
@@ -1259,89 +790,6 @@
     </div>
   </footer>
 
-  <!-- ======================================================================
-       SELECTOR FLOTANTE DE VERSIONES (TEMPORAL)
-       ======================================================================
-       INSTRUCCIONES PARA RETIRARLO UNA VEZ APROBADA LA VERSIÓN FINAL:
-       1. Eliminar este contenedor: <div id="version-picker-bar">...</div>
-       2. Dejar únicamente el <div id="purposes-vX"> correspondiente a la versión aprobada y borrar los otros dos.
-       3. En el div que dejes, quitarle la clase "purposes-variant" y "active".
-       4. Eliminar el script switchVersion(...) que se encuentra abajo.
-       ====================================================================== -->
-
-  <div id="version-picker-bar" role="toolbar" aria-label="Selector de versión">
-    <div class="picker-container">
-      <div class="picker-tag">
-        <span>Versiones:</span>
-      </div>
-      <button type="button" class="picker-btn" data-version="1" onclick="switchVersion('1')">
-        <span class="badge-v">1</span>
-        <span class="btn-text">Versión</span>
-      </button>
-      <button type="button" class="picker-btn active" data-version="2" onclick="switchVersion('2')">
-        <span class="badge-v">2</span>
-        <span class="btn-text">Versión</span>
-      </button>
-      <button type="button" class="picker-btn" data-version="3" onclick="switchVersion('3')">
-        <span class="badge-v">3</span>
-        <span class="btn-text">Versión</span>
-      </button>
-    </div>
-  </div>
-
-
-
-  <script>
-    function switchVersion(v) {
-      // 1. Quitar estado activo de todas las variantes de purposes
-      document.querySelectorAll('.purposes-variant').forEach(function (el) {
-        el.classList.remove('active');
-      });
-      // 2. Quitar estado activo de todos los botones del selector
-      document.querySelectorAll('.picker-btn').forEach(function (btn) {
-        btn.classList.remove('active');
-      });
-
-      // 3. Activar variante seleccionada
-      var targetView = document.getElementById('purposes-v' + v);
-      if (targetView) {
-        targetView.classList.add('active');
-      }
-
-      // 4. Activar botón correspondiente
-      var targetBtn = document.querySelector('.picker-btn[data-version="' + v + '"]');
-      if (targetBtn) {
-        targetBtn.classList.add('active');
-      }
-
-      // 5. Guardar preferencia en localStorage y actualizar hash
-      try {
-        localStorage.setItem('earth_selected_version', v);
-      } catch (e) { }
-
-      if (window.history && window.history.replaceState) {
-        window.history.replaceState(null, null, '#v' + v);
-      }
-    }
-
-    // Inicializar versión al cargar la página (prioridad: Hash > localStorage > Versión 2)
-    document.addEventListener('DOMContentLoaded', function () {
-      var hash = window.location.hash;
-      var initial = '2'; // Por defecto la Versión 2 (actual)
-      if (hash === '#v1') initial = '1';
-      else if (hash === '#v2') initial = '2';
-      else if (hash === '#v3') initial = '3';
-      else {
-        try {
-          var saved = localStorage.getItem('earth_selected_version');
-          if (saved && (saved === '1' || saved === '2' || saved === '3')) {
-            initial = saved;
-          }
-        } catch (e) { }
-      }
-      switchVersion(initial);
-    });
-  </script>
 </body>
 
 </html>
