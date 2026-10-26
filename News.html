@@ -16,7 +16,8 @@
   <meta property="og:title" content="Title Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
   <meta property="og:description"
     content="Discover how our scholarship programs, environmental conservation initiatives, and leadership workshops are creating lasting impact for youth and communities across the Americas.">
-  <meta property="og:image" content="./Images/EARTH_students.jpeg">
+  <meta property="og:image" content="https://earth-can.org/Images/EARTH_students.jpeg">
+  <meta property="og:image:secure_url" content="https://earth-can.org/Images/EARTH_students.jpeg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="800">
@@ -30,7 +31,7 @@
   <meta name="twitter:title" content="Title Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
   <meta name="twitter:description"
     content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
-  <meta name="twitter:image" content="./Images/EARTH_students.jpeg">
+  <meta name="twitter:image" content="https://earth-can.org/Images/EARTH_students.jpeg">
   <meta name="twitter:image:alt"
     content="EARTH University students collaborating on sustainable agriculture and education">
 
@@ -248,6 +249,7 @@
       letter-spacing: 0.5px;
       transition: all 0.25s ease;
       box-shadow: var(--shadow-sm);
+      white-space: nowrap;
     }
 
     .back-btn:hover {
@@ -623,6 +625,21 @@
       .container {
         width: 94%;
         margin-top: 24px;
+      }
+
+      .article-nav {
+        margin-bottom: 20px;
+        padding-bottom: 14px;
+      }
+
+      .back-btn {
+        padding: 8px 16px;
+        font-size: 0.82rem;
+        gap: 8px;
+      }
+
+      .article-breadcrumb-tag {
+        display: none;
       }
 
       .hero__imgwrap {

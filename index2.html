@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EARTH University Canada Foundation</title>
+  <meta name="description"
+    content="EARTH University Canada Foundation — Advancing education, sustainable agriculture, and leadership development.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="./Images/cropped-EARTH-favicon.webp">
+
+  <!-- Social Media & Link Previews (Facebook, WhatsApp, Telegram) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="EARTH University Canada Foundation">
+  <meta property="og:title" content="EARTH University Canada Foundation — Supporting Education & Sustainable Futures">
+  <meta property="og:description"
+    content="Dedicated to advancing education, leadership development, poverty relief, and environmental conservation through scholarships and training initiatives.">
+  <meta property="og:image" content="https://earth-can.org/Images/snai.jpg">
+  <meta property="og:image:secure_url" content="https://earth-can.org/Images/snai.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1500">
+  <meta property="og:image:height" content="580">
+  <meta property="og:image:alt" content="EARTH University Canada Foundation campus and community">
+  <meta property="og:url" content="https://earth-can.org/">
+  <meta property="og:locale" content="en_CA">
+
+  <!-- Twitter / Telegram Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="EARTH University Canada Foundation — Supporting Education & Sustainable Futures">
+  <meta name="twitter:description"
+    content="Dedicated to advancing education, leadership development, poverty relief, and environmental conservation through scholarships and training initiatives.">
+  <meta name="twitter:image" content="https://earth-can.org/Images/snai.jpg">
+  <meta name="twitter:image:alt" content="EARTH University Canada Foundation campus and community">
+
+  <!-- Google Fonts: Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --bg-soft: #f8fafc;
+      --text: #121212;
+      --muted: #6b7280;
+      --brand: #008c99;
+      --brand-hover: #00737e;
+      --brand-light: #e6f6f8;
+      --brand-600: #008c99;
+      --chip: #f4f6f8;
+      --card: #ffffff;
+      --stroke: #e5e7eb;
+      --radius: 18px;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --shadow: 0 10px 30px rgba(0, 0, 0, .08);
+      --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.04);
+      --shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.06), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+      --shadow-lg: 0 20px 35px -5px rgba(15, 23, 42, 0.08), 0 10px 15px -5px rgba(15, 23, 42, 0.04);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      font-family: "montserrat", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit
+    }
+
+    .container {
+      width: min(1380px, 92%);
+      margin-inline: auto;
+      margin-top: 40px;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(255, 255, 255, .8);
+      backdrop-filter: saturate(150%) blur(8px);
+      border-bottom: 1px solid var(--stroke)
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: .9rem 0
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      font-weight: 800;
+      letter-spacing: .2px
+    }
+
+    .brand__logo {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      background: radial-gradient(80% 80% at 30% 20%, #ffa366 0%, #ff5a1f 60%, #e73c00 100%)
+    }
+
+    .nav__links {
+      display: flex;
+      gap: 1rem;
+      align-items: center
+    }
+
+    .nav__links a {
+      color: #374151;
+      font-weight: 600;
+      padding: .5rem .75rem;
+      border-radius: 10px
+    }
+
+    .nav__links a:hover {
+      background: #f2f4f7
+    }
+
+    .actions {
+      display: flex;
+      gap: .6rem;
+      align-items: center
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      padding: .7rem 1.8rem;
+      border-radius: 999px;
+      border: 1px solid var(--stroke);
+      background: #fff;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all .2s ease
+    }
+
+    .btn--primary {
+      background: var(--brand);
+      border-color: var(--brand);
+      color: #fff;
+      box-shadow: var(--shadow)
+    }
+
+    .btn--primary:hover {
+      background: var(--brand-hover);
+      border-color: var(--brand-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 12px 25px rgba(0, 140, 153, .25)
+    }
+
+    .hamb {
+      display: none;
+      background: none;
+      border: 0;
+      font-size: 1.4rem
+    }
+
+    /* Hero (Untouched) */
+    .hero {
+      position: relative;
+      padding: 0 0 0 0
+    }
+
+    .hero2 {
+      position: relative;
+      padding: 0 0 0 0
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 6vw, 4rem);
+      line-height: 1.05;
+      text-align: center;
+      margin: 1rem auto .5rem;
+      font-weight: 900
+    }
+
+    .title-base {
+      color: var(--brand)
+    }
+
+    .hero h1 .accent {
+      color: var(--brand)
+    }
+
+    .hero p {
+      color: var(--muted);
+      text-align: center;
+      max-width: 1200px;
+      margin: .5rem auto 0
+    }
+
+    .hero__imgwrap {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      border-top: none solid var(--stroke);
+      overflow: hidden
+    }
+
+    .hero__img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      border-radius: 0
+    }
+
+    .logo {
+      width: 280px;
+      height: auto;
+    }
+
+    .hero__overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding: 70px 25% 0 0
+    }
+
+    .hero>.container {
+      position: relative;
+      z-index: 1
+    }
+
+    .logo-badge {
+      background: rgba(255, 255, 255, .78);
+      padding: 14px 18px;
+      border-radius: 14px;
+      box-shadow: var(--shadow)
+    }
+
+    /* Section Headers */
+    .section-header {
+      text-align: center;
+      max-width: 960px;
+      margin: 60px auto 35px;
+    }
+
+    .section-header h2 {
+      font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.5px;
+      margin: 0 0 10px 0;
+    }
+
+    .section-header p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin: 0;
+    }
+
+    /* =========================================
+       CHARITABLE PURPOSES
+       ========================================= */
+    .v1-purposes-container {
+      max-width: 1180px;
+      margin: 30px auto 65px;
+      background: #ffffff;
+      border: 1px solid var(--stroke);
+      border-radius: var(--radius-md);
+      padding: 38px 44px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .v1-purpose-p {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--text);
+      margin: 0 0 20px 0;
+      padding-bottom: 18px;
+      border-bottom: 1px dashed var(--stroke);
+      text-align: left !important;
+    }
+
+    .v1-purpose-p:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .v1-purpose-p strong {
+      color: var(--brand);
+      font-size: 1.1rem;
+      margin-right: 6px;
+    }
+
+    /* =========================================
+       EDITORIAL SPLIT NEWS CARD (Links to news.html)
+       ========================================= */
+    .news-editorial {
+      background: #ffffff;
+      border: 1px solid var(--stroke);
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      margin: 70px 0 45px;
+      box-shadow: var(--shadow-md);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .news-editorial__media {
+      position: relative;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      height: 380px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .news-editorial__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .news-editorial:hover .news-editorial__img {
+      transform: scale(1.04);
+    }
+
+    .news-editorial__badge {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      background: rgba(18, 18, 18, 0.85);
+      backdrop-filter: blur(8px);
+      color: #ffffff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 999px;
+    }
+
+    .news-editorial__content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .editorial-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .editorial-eyebrow .line {
+      width: 40px;
+      height: 2px;
+      background: var(--brand);
+    }
+
+    .editorial-eyebrow .text {
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 2.2px;
+      text-transform: uppercase;
+      color: var(--brand);
+    }
+
+    .news-editorial__title {
+      font-size: clamp(2rem, 3.5vw, 2.75rem);
+      font-weight: 800;
+      line-height: 1.15;
+      color: var(--text);
+      letter-spacing: -0.5px;
+      margin: 0 0 18px 0;
+    }
+
+    .news-editorial__desc {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--muted);
+      margin: 0 0 33px 0;
+      max-width: 580px;
+      text-align: left !important;
+    }
+
+    .btn-news {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 5px;
+      padding: 14px 34px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      color: var(--text);
+      background: transparent;
+      border: 1.5px solid var(--text);
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn-news:hover {
+      background: var(--brand);
+      border-color: var(--brand);
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 22px rgba(0, 140, 153, 0.28);
+    }
+
+    .btn-news svg {
+      width: 16px;
+      height: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .btn-news:hover svg {
+      transform: translateX(4px);
+    }
+
+    /* Contact Us */
+    .contact-grid {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 70px;
+    }
+
+    .contact-card {
+      flex: 1;
+      min-width: 280px;
+      max-width: 520px;
+      background: #ffffff;
+      border: 1px solid var(--stroke);
+      border-radius: var(--radius-md);
+      padding: 34px 28px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: #cbd5e1;
+    }
+
+    .contact-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 12px;
+      background: var(--brand-light);
+      color: var(--brand);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+
+    .contact-card h5 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 0 0 8px 0;
+    }
+
+    .contact-card p,
+    .contact-card a {
+      color: var(--muted);
+      font-size: 0.98rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .contact-card a:hover {
+      color: var(--brand);
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--stroke);
+      padding: 2.5rem 0;
+      color: #6b7280;
+      background: var(--bg-soft);
+    }
+
+    /* Responsive media queries */
+    @media (max-width: 980px) {
+      .hero__overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20% 0 0 0;
+        pointer-events: none
+      }
+
+      .nav__links {
+        display: none
+      }
+
+      .hamb {
+        display: block
+      }
+
+      .news-editorial {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 32px;
+      }
+
+      .news-editorial__media {
+        height: 300px;
+      }
+
+      .hero__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 60% center !important;
+        border-radius: 0;
+      }
+
+      .logo {
+        width: 240px;
+        height: auto;
+      }
+
+      .hero__img {
+        object-position: 10% center !important;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .v1-purposes-container {
+        padding: 26px 20px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: 94%;
+        margin-top: 24px;
+      }
+
+      .hero__overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20% 0 0 0;
+        pointer-events: none
+      }
+
+      .hero {
+        padding-bottom: 0
+      }
+
+      .logo {
+        width: 270px;
+        height: auto;
+      }
+
+      .hero__img {
+        object-position: 25% center !important;
+      }
+
+      .news-editorial {
+        padding: 24px;
+      }
+
+      .news-editorial__media {
+        height: 240px;
+      }
+
+      .btn-news {
+        width: 100%;
+      }
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--brand-600);
+      outline-offset: 3px;
+      border-radius: 8px
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header (Untouched) -->
+  <header>
+    <!--
+    <div class="container nav">
+      <a class="brand" href="Images/EARTH_Foundation_Canada-High Res.jpg">
+        <span class="brand__logo"><img src="Images/EARTH_Foundation_Canada-High Res.jpg" alt=""/></span>
+        <span>EARTH University Canada Foundation</span>
+      </a>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="index2.html">Propuesta 2</a>
+        <a href="#list">Property List</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+      <div style="display: none" class="actions">
+        <button class="btn">Sign in</button>
+        <button class="btn btn--primary">Sign up</button>
+        <button class="hamb" aria-label="Abrir menú">☰</button>
+      </div>
+    </div>
+    -->
+  </header>
+
+  <!-- Hero (Untouched across all versions) -->
+  <section class="hero">
+    <div class="hero__imgwrap">
+      <img class="hero__img" src="./Images/snai.jpg" alt="EARTH university" />
+      <div class="hero__overlay">
+        <div class="logo">
+          <img src="./Images/EARTH_Foundation_Canada.png" alt="EARTH University Canada Foundation" />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h1><span class="title-base">EARTH University</span><br><span class="title-base">Canada Foundation</span></h1>
+
+      <!-- Section Header & Intro -->
+      <div class="section-header">
+        <p style="font-size: 1.15rem; color: var(--text); font-weight: 600; margin-bottom: 8px;">
+          The EARTH University Canada Foundation is a private foundation created in 2023 to:
+        </p>
+      </div>
+
+
+      <!-- Charitable Purposes (Numbered List) -->
+      <div class="v1-purposes-container">
+        <p class="v1-purpose-p">
+          <strong>1)</strong> Advance education by providing publicly available scholarships, bursaries, and other
+          forms of financial assistance to students to attend post-secondary education institutions.
+        </p>
+        <p class="v1-purpose-p">
+          <strong>2)</strong> Support economic growth and leadership development by operating a program, inclusive
+          of business training and support designed to enable youth to transition successfully into employment and
+          entrepreneurial roles in their communities.
+        </p>
+        <p class="v1-purpose-p">
+          <strong>3)</strong> Protect the environment for the benefit of the public by conserving, or restoring
+          ecosystems, and promoting behaviour changes to strengthen climate change mitigation, adaptation, and
+          resilience.
+        </p>
+        <p class="v1-purpose-p">
+          <strong>4)</strong> Advance education by providing workshops, training programs, seminars, conferences,
+          educational aids and related support on topics related to business development, economic development,
+          skills development, entrepreneurship, agricultural production, marketing, financial literacy, career
+          skills and gender equality.
+        </p>
+        <p class="v1-purpose-p">
+          <strong>5)</strong> Advance education by providing a professional development and/or leadership program
+          that involves training, workshops and fellowships for post-secondary students and recent graduates which
+          furthers their understanding of entrepreneurship and supports them in transitioning to employment.
+        </p>
+      </div>
+
+      <!-- ========================================================
+           NEWS SECTION (Tarjeta Editorial que lleva a news.html)
+           Sin tarjetas de historias
+           ======================================================== -->
+      <section id="news">
+
+        <!-- Split Feature Banner -->
+        <div class="news-editorial">
+          <div class="news-editorial__media">
+            <img class="news-editorial__img" src="./Images/snai.jpg" alt="EARTH University News and Impact" />
+            <!--<span class="news-editorial__badge">Featured</span>-->
+          </div>
+
+          <div class="news-editorial__content">
+            <div class="editorial-eyebrow">
+              <span class="line"></span>
+              <span class="text">Latest News</span>
+            </div>
+
+            <h2 class="news-editorial__title">News</h2>
+
+            <p class="news-editorial__desc">
+              Discover our latest updates, scholarship recipient stories, community workshops, and regenerative
+              agriculture initiatives supported by the Foundation.
+            </p>
+
+            <a href="News.html" class="btn-news">
+              <span>View News</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ========================================================
+           CONTACT US SECTION
+           ======================================================== -->
+      <div style="text-align: center; margin-top: 50px; margin-bottom: 30px">
+        <h2 style="font-size: 2.2rem; font-weight: 800; color: var(--text);">Contact Us</h2>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Email Card -->
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </div>
+          <h5>Email</h5>
+          <p><a href="mailto:info@earth-can.org">info@earth-can.org</a></p>
+        </div>
+
+        <!-- Mailing Address Card -->
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </div>
+          <h5>Mailing Address</h5>
+          <p>
+            18 King Street East, Suite 1400<br>
+            Toronto, ON &bull; M5C 1C4
+          </p>
+        </div>
+      </div>
+
+    </div> <!-- /.container -->
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container" style="display:block; align-items:center; align-content: center; margin-top: 0;">
+      <div style="text-align: center;">
+        <span>&copy; 2026&nbsp;EARTH University Canada Foundation. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
