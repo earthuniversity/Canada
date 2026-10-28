@@ -1,0 +1,997 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Noticias y Actualizaciones — EARTH University Canada Foundation</title>
+  <meta name="description" content="Últimas noticias y actualizaciones de la EARTH University Canada Foundation.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="./Images/cropped-EARTH-favicon.webp">
+
+  <!-- Social Media & Link Previews (Facebook, WhatsApp, Telegram) -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="EARTH University Canada Foundation">
+  <meta property="og:title" content="">
+  <meta property="og:description"
+    content="EARTH University Canada Foundation es una fundación privada establecida en 2023 para impulsar la educación y crear sistemas alimentarios más sostenibles y resilientes en África.">
+  <meta property="og:image" content="https://earth-can.org/Images/EARTH_students.jpeg">
+  <meta property="og:image:secure_url" content="https://earth-can.org/Images/EARTH_students.jpeg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="800">
+  <meta property="og:image:alt"
+    content="EARTH University Canada Foundation es una fundación privada establecida en 2023 para impulsar la educación y crear sistemas alimentarios más sostenibles y resilientes en África.">
+  <meta property="og:url" content="https://earth-can.org/Noticias.html">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter / Telegram Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description"
+    content="EARTH University Canada Foundation es una fundación privada establecida en 2023 para impulsar la educación y crear sistemas alimentarios más sostenibles y resilientes en África.">
+  <meta name="twitter:image" content="https://earth-can.org/Images/EARTH_students.jpeg">
+  <meta name="twitter:image:alt"
+    content="EARTH University Canada Foundation es una fundación privada establecida en 2023 para impulsar la educación y crear sistemas alimentarios más sostenibles y resilientes en África.">
+
+  <!-- Google Fonts: Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --bg-soft: #f8fafc;
+      --text: #121212;
+      --muted: #6b7280;
+      --brand: #008c99;
+      --brand-hover: #00737e;
+      --brand-light: #e6f6f8;
+      --brand-600: #008c99;
+      --chip: #f4f6f8;
+      --card: #ffffff;
+      --stroke: #e5e7eb;
+      --radius: 18px;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --shadow: 0 10px 30px rgba(0, 0, 0, .08);
+      --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.04);
+      --shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.06), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+      --shadow-lg: 0 20px 35px -5px rgba(15, 23, 42, 0.08), 0 10px 15px -5px rgba(15, 23, 42, 0.04);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "montserrat", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1380px, 92%);
+      margin-inline: auto;
+      margin-top: 40px;
+    }
+
+    /* Header (Exact same structure as index.html) */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(255, 255, 255, .8);
+      backdrop-filter: saturate(150%) blur(8px);
+      border-bottom: 1px solid var(--stroke);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: .9rem 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      font-weight: 800;
+      letter-spacing: .2px;
+    }
+
+    .brand__logo {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      background: radial-gradient(80% 80% at 30% 20%, #ffa366 0%, #ff5a1f 60%, #e73c00 100%);
+    }
+
+    .nav__links {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .nav__links a {
+      color: #374151;
+      font-weight: 600;
+      padding: .5rem .75rem;
+      border-radius: 10px;
+    }
+
+    .nav__links a:hover {
+      background: #f2f4f7;
+    }
+
+    .actions {
+      display: flex;
+      gap: .6rem;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      padding: .7rem 1.8rem;
+      border-radius: 999px;
+      border: 1px solid var(--stroke);
+      background: #fff;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all .2s ease;
+    }
+
+    .btn--primary {
+      background: var(--brand);
+      border-color: var(--brand);
+      color: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .btn--primary:hover {
+      background: var(--brand-hover);
+      border-color: var(--brand-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 12px 25px rgba(0, 140, 153, .25);
+    }
+
+    .hamb {
+      display: none;
+      background: none;
+      border: 0;
+      font-size: 1.4rem;
+    }
+
+    /* Hero / Top Banner (Matches index.html) */
+    .hero {
+      position: relative;
+      padding: 0;
+    }
+
+    .hero__imgwrap {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      border-top: none solid var(--stroke);
+      overflow: hidden;
+    }
+
+    .hero__img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      border-radius: 0;
+    }
+
+    .logo {
+      width: 280px;
+      height: auto;
+    }
+
+    .hero__overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding: 50px 20% 0 0;
+    }
+
+    /* Breadcrumbs / Back button */
+    .article-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--stroke);
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 22px;
+      border-radius: 999px;
+      background: #ffffff;
+      border: 1px solid var(--stroke);
+      color: var(--text);
+      font-weight: 700;
+      font-size: 0.88rem;
+      letter-spacing: 0.5px;
+      transition: all 0.25s ease;
+      box-shadow: var(--shadow-sm);
+      white-space: nowrap;
+    }
+
+    .back-btn:hover {
+      background: var(--brand);
+      border-color: var(--brand);
+      color: #ffffff;
+      transform: translateX(-4px);
+      box-shadow: 0 8px 20px rgba(0, 140, 153, 0.25);
+    }
+
+    .back-btn svg {
+      width: 18px;
+      height: 18px;
+      transition: transform 0.25s ease;
+    }
+
+    .back-btn:hover svg {
+      transform: translateX(-2px);
+    }
+
+    .article-breadcrumb-tag {
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--muted);
+    }
+
+    /* Article Layout */
+    .article-wrapper {
+      max-width: 900px;
+      margin: 0 auto 80px;
+    }
+
+    .article-meta-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .article-badge {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--brand);
+      background: var(--brand-light);
+      padding: 6px 14px;
+      border-radius: 999px;
+    }
+
+    .article-date {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    .article-title {
+      font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: -0.5px;
+      color: var(--text);
+      margin: 0 0 24px 0;
+    }
+
+    .article-lead {
+      font-size: 1.25rem;
+      line-height: 1.7;
+      color: #4b5563;
+      font-weight: 500;
+      margin-bottom: 35px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid var(--stroke);
+    }
+
+    .article-featured-media {
+      margin-bottom: 45px;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--stroke);
+    }
+
+    .article-featured-media img {
+      width: 100%;
+      max-height: 480px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .article-featured-media figcaption {
+      padding: 14px 20px;
+      background: var(--bg-soft);
+      font-size: 0.85rem;
+      color: var(--muted);
+      border-top: 1px solid var(--stroke);
+      font-style: italic;
+    }
+
+    /* Article Body Typography */
+    .article-body {
+      font-size: 1.1rem;
+      line-height: 1.85;
+      color: #374151;
+    }
+
+    .article-body p {
+      margin: 0 0 24px 0;
+      text-align: justify;
+    }
+
+    .article-body h2 {
+      font-size: clamp(1.6rem, 3vw, 2rem);
+      font-weight: 800;
+      color: var(--text);
+      margin: 45px 0 18px 0;
+      line-height: 1.3;
+      letter-spacing: -0.3px;
+    }
+
+    .article-body h3 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 35px 0 14px 0;
+    }
+
+    .article-quote {
+      margin: 40px 0;
+      padding: 28px 32px;
+      background: var(--brand-light);
+      border-left: 5px solid var(--brand);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    }
+
+    .article-quote p {
+      font-size: 1.25rem;
+      font-style: italic;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.6;
+      margin: 0 0 10px 0;
+    }
+
+    .article-quote cite {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--brand);
+      font-style: normal;
+      display: block;
+    }
+
+    /* Callout Card (Details) */
+    .info-callout {
+      background: #ffffff;
+      border: 1px solid var(--stroke);
+      border-radius: var(--radius-md);
+      padding: 32px 36px;
+      margin: 45px 0;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .info-callout h4 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--text);
+      margin: 0 0 16px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .info-callout h4 svg {
+      color: var(--brand);
+    }
+
+    .info-callout ul {
+      margin: 0;
+      padding-left: 20px;
+      color: #4b5563;
+      font-size: 1.02rem;
+      line-height: 1.8;
+    }
+
+    .info-callout li {
+      margin-bottom: 8px;
+    }
+
+    .info-callout li strong {
+      color: var(--text);
+    }
+
+    /* Article CTA / Share */
+    .article-footer-cta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 55px;
+      padding-top: 30px;
+      border-top: 1px solid var(--stroke);
+    }
+
+    /* More News Section */
+    .more-news-section {
+      background: var(--bg-soft);
+      border-top: 1px solid var(--stroke);
+      padding: 70px 0 85px;
+      margin-top: 60px;
+    }
+
+    .more-news-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .more-news-header h3 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--text);
+      margin: 0 0 8px 0;
+    }
+
+    .more-news-header p {
+      color: var(--muted);
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    .more-news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+
+    .related-card {
+      background: #ffffff;
+      border: 1px solid var(--stroke);
+      border-radius: var(--radius-md);
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+    }
+
+    .related-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: #cbd5e1;
+    }
+
+    .related-card__meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--brand);
+      margin-bottom: 12px;
+    }
+
+    .related-card__title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      line-height: 1.35;
+      color: var(--text);
+      margin: 0 0 10px 0;
+    }
+
+    .related-card__desc {
+      font-size: 0.94rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* Footer (Exact same structure as index.html) */
+    footer {
+      border-top: 1px solid var(--stroke);
+      padding: 2.5rem 0 5rem 0;
+      color: #6b7280;
+      background: var(--bg-soft);
+    }
+
+    /* Responsive */
+    @media (max-width: 980px) {
+      .hero__imgwrap {
+        height: 260px;
+      }
+
+      .hero__overlay {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+      }
+
+      .logo {
+        width: 220px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .article-title {
+        font-size: 2rem;
+      }
+
+      .article-lead {
+        font-size: 1.1rem;
+      }
+
+      .info-callout {
+        padding: 24px 20px;
+      }
+
+      .article-quote {
+        padding: 20px 22px;
+      }
+
+      .article-footer-cta {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    /* Floating Language Button (Fixed Bottom-Right) */
+    .lang-btn-fixed {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 999;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 11px 22px;
+      background: #ffffff;
+      color: var(--brand);
+      border: 1.5px solid var(--brand);
+      border-radius: 13px;
+      font-family: "montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 0.88rem;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 5px 5px rgba(189, 189, 189, 0.3), 0 4px 10px rgba(214, 214, 214, 0.03);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .lang-btn-fixed:hover {
+      background: var(--brand);
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 14px 10px rgba(212, 212, 212, 0.05);
+    }
+
+    .lang-btn-fixed svg {
+      width: 17px;
+      height: 17px;
+      transition: transform 0.25s ease;
+    }
+
+    .lang-btn-fixed:hover svg {
+      transform: rotate(15deg);
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: 94%;
+        margin-top: 24px;
+      }
+
+      .article-nav {
+        margin-bottom: 20px;
+        padding-bottom: 14px;
+      }
+
+      .back-btn {
+        padding: 8px 16px;
+        font-size: 0.82rem;
+        gap: 8px;
+      }
+
+      .article-breadcrumb-tag {
+        display: none;
+      }
+
+      .hero__imgwrap {
+        height: 200px;
+      }
+
+      .logo {
+        width: 200px;
+      }
+
+      .lang-btn-fixed {
+        bottom: 16px;
+        right: 16px;
+        padding: 9px 18px;
+        font-size: 0.82rem;
+      }
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--brand-600);
+      outline-offset: 3px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header (Untouched structure matching index.html) -->
+  <header>
+    <!--
+    <div class="container nav">
+      <a class="brand" href="Images/EARTH_Foundation_Canada-High Res.jpg">
+        <span class="brand__logo"><img src="Images/EARTH_Foundation_Canada-High Res.jpg" alt=""/></span>
+        <span>EARTH University Canada Foundation</span>
+      </a>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="index2.html">Propuesta 2</a>
+        <a href="#list">Property List</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+      <div style="display: none" class="actions">
+        <button class="btn">Sign in</button>
+        <button class="btn btn--primary">Sign up</button>
+        <button class="hamb" aria-label="Abrir menú">☰</button>
+      </div>
+    </div>
+    -->
+  </header>
+
+  <!-- Hero Top Banner (Matches index.html) -->
+  <section class="hero">
+    <div class="hero__imgwrap">
+      <img class="hero__img" src="./Images/snai.jpg" alt="EARTH university" />
+      <div class="hero__overlay">
+        <div class="logo">
+          <a href="index.html" title="Return to Home">
+            <img src="./Images/EARTH_Foundation_Canada.png" alt="EARTH University Canada Foundation" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Article Content Container -->
+  <main class="container">
+
+    <!-- Top Navigation / Back Button -->
+    <div class="article-nav">
+      <a href="index.html" class="back-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+          stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Volver al Inicio</span>
+      </a>
+
+      <span class="article-breadcrumb-tag">Noticias de la Fundación &bull; 2026</span>
+    </div>
+
+    <!-- Article Content -->
+    <article class="article-wrapper">
+
+      <div class="article-meta-header">
+        <!--<span class="article-badge">Categoría de Noticia</span>-->
+        <span class="article-date">&bull; Octubre 2026</span>
+      </div>
+
+      <h1 class="article-title">Mastercard Foundation y EARTH University Canada Foundation anuncian nuevo Fondo
+        Patrimonial para el Liderazgo en Sistemas Alimentarios</h1>
+
+      <p class="article-body">
+        29 de octubre del 2026 – EARTH University Canada Foundation recibió una donación patrimonial de Mastercard
+        Foundation para brindar acceso a educación de calidad y para preparar a una nueva generación de líderes con las
+        habilidades y la formación práctica necesarias para construir sistemas alimentarios sostenibles y resilientes, e
+        impulsar la acción climática en África y más allá.
+      </p>
+
+      <!-- Featured Image -->
+      <figure class="article-featured-media">
+        <img src="./Images/EARTH_students.jpeg" alt="Fotografía descriptiva de la noticia" />
+        <!--<figcaption>Fotografía descriptiva con pie de foto en español para verificar la armonía visual y la tipografía.
+        </figcaption>-->
+      </figure>
+
+      <!-- Article Body -->
+      <div class="article-body">
+        <p>
+          Establecida a través de EARTH University Canada Foundation, esta iniciativa nace tras más de una década de
+          colaboración entre Mastercard Foundation y la Universidad EARTH. Esta alianza incluye el Programa de Becas
+          Mastercard Foundation, que permite a jóvenes altamente talentosos y comprometidos, principalmente africanos,
+          acceder a educación superior y desarrollar su potencial; el Programa de Fellowship Mastercard Foundation –
+          Universidad EARTH, que apoya a recién graduados a tener una transición exitosa hacia empleo digno y
+          satisfactorio, y hacia emprendimientos en sistemas alimentarios en toda África; y el Programa e-Learning by
+          Doing, que genera y distribuye materiales de aprendizaje digital innovadores, accesibles e interactivos sobre
+          sistemas alimentarios.
+        </p>
+
+        <p>
+          Hasta la fecha, el Programa de Becas de Mastercard Foundation en la Universidad EARTH ha apoyado a más de 300
+          jóvenes de África y América Latina, de los cuales un 60 por ciento son mujeres. Los graduados africanos
+          provienen de más de 20 países del continente, y el 73 por ciento de ellos ha logrado una transición
+          profesional exitosa en los seis meses posteriores a su graduación. Además, el 86 por ciento de los graduados
+          africanos de EARTH reporta que contribuye a la agricultura, los sistemas alimentarios y al desarrollo
+          sostenible en África mediante, entre otras cosas, la creación de fincas y agronegocios que brindan a jóvenes
+          de sus comunidades habilidades prácticas en agricultura sostenible, y que amplían el acceso a mercados y
+          soluciones para los pequeños productores. Para finales del 2030, los programas de becas, Fellowship y
+          e-Learning habrán impactado en conjunto a más de 21,000 estudiantes y jóvenes líderes en África y América
+          Latina.
+        </p>
+
+        <h3>El fondo patrimonial apoyará iniciativas y programas estratégicos a perpetuidad, con miras a avanzar los
+          siguientes objetivos:</h3>
+
+        <ul>
+          <li>Ampliar el acceso a una educación de liderazgo transformadora para jóvenes líderes africanos, ofreciendo
+            250 becas de pregrado y 200 becas de maestría cada década a través del Programa de Becas Mastercard
+            Foundation.</li>
+          <li>2. Acelerar el acceso a empleo y la transición hacia el emprendimiento, ofreciendo al menos 500
+            fellowships de posgrado a recién graduados e invirtiendo en al menos 200 emprendimientos estudiantiles cada
+            década.</li>
+          <li>3. Fortalecer la colaboración Sur-Sur mediante la expansión de programas para transformar la educación
+            agrícola y desarrollar sistemas alimentarios comunitarios resilientes en África, contribuyendo a mejorar la
+            vida de miles de personas africanas cada década.</li>
+        </ul>
+
+        <!-- Editorial Quote 
+        <blockquote class="article-quote">
+          <p>
+            "Esta es una cita destacada de ejemplo en español, concebida para resaltar declaraciones institucionales o
+            testimonios importantes dentro de la estructura del artículo."
+          </p>
+          <cite>— Cita Destacada de Muestra</cite>
+        </blockquote>-->
+
+        <p>
+          El Fondo Patrimonial para el Liderazgo en Sistemas Alimentarios refleja un compromiso que ambas fundaciones
+          comparten: el avance en educación e inclusión financiera de jóvenes para aliviar la pobreza. Se construye
+          sobre la solidez de una alianza de varios años y establece una plataforma permanente para profundizar y
+          ampliar su impacto durante generaciones.
+        </p>
+
+        <p>
+          Se proyecta que la población de África superará los dos mil millones de habitantes para finales de siglo, por
+          lo que se vuelve indispensable fortalecer los sistemas alimentarios, mejorar la productividad agrícola y
+          construir comunidades resilientes ante el cambio climático.
+        </p>
+
+        <p>
+          A través del Fondo Patrimonial para el Liderazgo en Sistemas Alimentarios, Mastercard Foundation y EARTH
+          University Canada Foundation están invirtiendo en una nueva generación de líderes que estén preparados para
+          enfrentar desafíos, combinando educación, formación práctica y emprendimiento para impulsar la innovación en
+          la agricultura, fortalecer la seguridad alimentaria y crear oportunidades económicas en todo el continente.
+        </p>
+
+        <p>
+          Al reflexionar sobre la importancia de este nuevo fondo patrimonial y la alianza que le ha dado forma, Sewit
+          Ahderom, Presidenta y CEO de Mastercard Foundation, señaló: “El 86% de los becarios africanos de Mastercard
+          Foundation en EARTH regresa a casa y construye algo, ya sea una finca o un agronegocio, o apoya a la formación
+          de jóvenes en sus propias comunidades. Eso no es casualidad. EARTH pone a los becarios de Mastercard
+          Foundation en el campo desde el primer año, de modo que se gradúan habiendo dirigido ya un emprendimiento y
+          llegan a casa listos para construir. Ese tipo de trabajo digno y gratificante es la razón de ser de la
+          Fundación. Es también la razón por la que quisimos un compromiso que no termine cuando finaliza un programa.
+          Un fondo patrimonial mantiene abierta esta oportunidad para la próxima generación de becarios de Mastercard
+          Foundation, para que puedan contar con ella. Los sistemas alimentarios no se transforman en unos pocos años.
+          Los transforma una generación de líderes, y nosotros los acompañaremos y respaldaremos durante todo el
+          camino.”
+        </p>
+
+        <p>
+          “Este fondo patrimonial nos permite avanzar hacia la aspiración que tenemos para el 2050: preparar y empoderar
+          a un movimiento global de líderes éticos que transformen la producción de alimentos y mejoren los medios de
+          vida de pequeños agricultores y productores en todo el mundo”, comentó Arturo Condo, Presidente de la Junta
+          Directiva de EARTH University Canada Foundation. “Agradecemos a Mastercard Foundation por su constante
+          confianza en nuestra institución. Este Fondo Patrimonial nos permitirá profundizar nuestras conexiones con
+          aliados africanos, aumentar nuestra presencia en África y ampliar nuestro impacto en los sistemas alimentarios
+          sostenibles en todo el continente.”
+        </p>
+
+        <p>
+          El Fondo Patrimonial para el Liderazgo en Sistemas Alimentarios reafirma una misión crucial y compartida:
+          construir un futuro donde la educación superior sea inclusiva, transformadora e impulsada por un propósito
+          claro de preparar y empoderar a la próxima generación de líderes de nuestros sistemas alimentarios.
+        </p>
+        <h3>Acerca de Mastercard Foundation </h3>
+
+        <p>
+          Mastercard Foundation es una organización benéfica canadiense registrada y una de las fundaciones más grandes
+          del mundo. Con sede en Toronto, Canadá, trabaja con organizaciones visionarias para impulsar la educación y la
+          inclusión financiera, con el fin de que jóvenes de África y jóvenes indígenas de Canadá puedan acceder a un
+          trabajo digno y gratificante. Su estrategia Young Africa Works busca que 30 millones de jóvenes accedan a un
+          trabajo digno y gratificante para el 2030, mientras que su estrategia EleV apoyará a 100,000 jóvenes indígenas
+          de Canadá para que completen su educación y hagan la transición hacia un trabajo significativo, alineados a
+          sus tradiciones, valores y aspiraciones. Creada en 2006 gracias a la generosidad de Mastercard cuando esta
+          salió a bolsa, la Fundación es una organización independiente. Sus políticas, operaciones y decisiones sobre
+          programas son determinadas por su Junta Directiva y su equipo de liderazgo. Para obtener más información sobre
+          la Fundación, visite: <a href="https://mastercardfdn.org" target="_blank"
+            style="color: #0066cc; text-decoration: underline;">https://mastercardfdn.org</a>
+        </p>
+
+        <h3>Acerca de EARTH University Canada Foundation</h3>
+
+        <p>
+          EARTH University Canada Foundation es una fundación privada establecida en 2023 en Toronto, Canadá. Su misión
+          se centra en la educación, el desarrollo económico y la protección ambiental. Ofrece becas y apoyo financiero
+          a jóvenes para su educación, brinda capacitación laboral y talleres a estudiantes de educación superior y
+          recién graduados en agricultura, medio ambiente y agronegocios, y trabaja para aliviar la pobreza en países en
+          desarrollo mediante la formación y el apoyo en agricultura sostenible, emprendimiento y temas afines para
+          personas en situación de vulnerabilidad. Para más información, visite: <a href="https://www.earth-can.org/"
+            target="_blank" style="color: #0066cc; text-decoration: underline;">https://www.earth-can.org/</a>
+        </p>
+
+        <h3>Acerca de la Universidad EARTH</h3>
+
+        <p>
+          EARTH es una universidad global con sede en Costa Rica que prepara y empodera a jóvenes líderes para
+          transformar de manera ética y sostenible los sistemas alimentarios, proteger y mejorar los medios de vida de
+          los productores de alimentos, y regenerar el planeta. Su programa único ofrece a sus estudiantes la
+          oportunidad de aprender sobre ciencias agrícolas, sistemas alimentarios, emprendimiento ético y desafíos
+          sociales y ambientales, a través de un aprendizaje experiencial centrado en el estudiante, y conviviendo con
+          compañeros de todo el mundo. Dada su amplia trayectoria en educación y programas experienciales y
+          comunitarios, EARTH University Canada Foundation está contratando a la Universidad EARTH para implementar
+          algunos de sus programas e iniciativas, aprovechando la experiencia de la Universidad para lograr un mayor
+          impacto. Para más información, visite: <a href="https://www.earth.ac.cr/home/" target="_blank"
+            style="color: #0066cc; text-decoration: underline;">https://www.earth.ac.cr</a>
+        </p>
+        <!-- Informative Callout Box 
+        <div class="info-callout">
+          <h4>
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="16" x2="12" y2="12" />
+              <line x1="12" y1="8" x2="12.01" y2="8" />
+            </svg>
+            Información y Detalles Relevantes
+          </h4>
+          <ul>
+            <li><strong>Detalle principal:</strong> Texto de prueba en español que describe los aspectos fundamentales
+              de la convocatoria o anuncio.</li>
+            <li><strong>Requisitos o pasos:</strong> Orientación clara y estructurada para guiar al lector en los pasos
+              a seguir.</li>
+            <li><strong>Canal de contacto:</strong> Espacio reservado para indicar vías de comunicación y resolver
+              dudas.</li>
+          </ul>
+        </div>
+
+        <p>
+          Párrafo de cierre en español que resume las ideas presentadas y ofrece una conclusión armónica antes de los
+          llamados a la acción finales.
+        </p>
+      </div>-->
+
+        <!-- Footer CTA / Back Link -->
+        <div class="article-footer-cta">
+          <a href="index.html" class="back-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            <span>Volver al Inicio</span>
+          </a>
+
+
+        </div>
+
+    </article>
+
+  </main>
+
+  <!-- More Foundation Updates 
+  <section class="more-news-section">
+    <div class="container">
+      <div class="more-news-header">
+        <h3>Other Foundation Updates</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod</p>
+      </div>
+
+      <div class="more-news-grid">-->
+  <!-- Related 1 
+        <article class="related-card">
+          <div class="related-card__meta">
+            <span>Category A</span>
+            <span>&bull;</span>
+            <time>September 2026</time>
+          </div>
+          <h4 class="related-card__title">Lorem Ipsum Dolor Sit Amet Consectetur</h4>
+          <p class="related-card__desc">
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris.
+          </p>
+        </article>-->
+
+  <!-- Related 2 
+        <article class="related-card">
+          <div class="related-card__meta">
+            <span>Category B</span>
+            <span>&bull;</span>
+            <time>August 2026</time>
+          </div>
+          <h4 class="related-card__title">Vestibulum Lacinia Arcu Eget Nulla Vulputate</h4>
+          <p class="related-card__desc">
+            Curabitur vel diam id libero interdum suscipit non vitae velit. Phasellus vitae ipsum ut massa ultrices
+            facilisis commodo.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>-->
+
+  <!-- Footer (Exact same structure as index.html) -->
+  <footer>
+    <div class="container" style="display:block; align-items:center; align-content: center; margin-top: 0;">
+      <div style="text-align: center;">
+        <span>&copy; 2026&nbsp;EARTH University Canada Foundation. Todos los derechos reservados.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Fijo Inferior Derecho: Español -->
+  <a href="News.html" class="lang-btn-fixed" aria-label="Cambiar idioma a Inglés" title="Cambiar a Inglés">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"></circle>
+      <line x1="2" y1="12" x2="22" y2="12"></line>
+      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+    </svg>
+    <span>English</span>
+  </a>
+
+</body>
+
+</html>
